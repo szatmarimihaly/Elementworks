@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-white-50: #d9ecff;
+  --color-gray-50: #f3f4f6;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .input {
+    @apply bg-zinc-900/80 p-4 rounded-lg text-white outline-none w-full focus:bg-zinc-800 focus:ring-2 focus:ring-white;
+  }
+
+  .form {
+    @apply border border-white shadow-[0_0_20px_rgba(255,255,255,0.7)] rounded-xl p-4 w-80 md:w-160 flex flex-col gap-4 mb-20;
+  }
+
+  .textarea {
+    @apply bg-zinc-900/80 p-4 rounded-lg outline-none focus:bg-zinc-800 focus:ring-2 focus:ring-white;
+  }
+
+  .submit {
+    @apply bg-zinc-900/80 p-4 mt-10 mb-2 rounded-xl hover:bg-zinc-800/80 transition-all duration-200 w-30 flex items-center gap-2;
+  }
+
+  .footer-item {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .footer-title {
+    @apply text-xl font-medium underline underline-offset-8;
+  }
+
+  .footer-subtitle {
+    @apply text-lg font-light;
+  }
+
+  .footer-list {
+    @apply flex flex-col items-center justify-center gap-4;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+i {
+  user-select: none;
+  pointer-events: none;
+}
